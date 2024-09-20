@@ -1,0 +1,61 @@
+paths:
+  /api/products/{pid}:
+    get: 
+      tags:
+        - Products
+      summary: Get product by Id
+      parameters:
+      - name: pid
+        in: path
+        description: ID del producto
+        required: true
+        schema: 
+          type: string
+      responses:
+        "200":
+          description: el producto fue obtenido correctamente.
+          content:
+            aplication/json:
+              schema:
+                $ref: "#components/schemas/products"
+        "404":
+          description: Producto no encontrado.
+        "500":
+          description: Internal Server Error.  
+
+components:
+  schemas:
+    products:
+      type: object
+      properties: 
+        _id: 
+          type: ObjectId
+        title:
+          type: string
+        description:
+          type: string
+        thumbnail:
+          type: array
+        code:
+          type: string
+        stock:
+          type: integer
+        status:
+          type: boolean
+        price:
+          type: integer
+        category:
+          type: string
+        owner:
+          type: string
+      example:
+        _id: "66433e9079ad1021ab6c7f6e"
+        title: "Producto 22"
+        description: " un producto"
+        thumbnail: "[www.google.com]"
+        code: "ADF130"
+        stock: 20
+        status: true
+        price: 900
+        category: "products"
+        owner: "admin"

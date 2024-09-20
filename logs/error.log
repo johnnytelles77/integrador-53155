@@ -1,0 +1,69 @@
+2024-08-10 13:29:29 error: 
+2024-08-10 13:29:34 error: se cayo el servidor
+2024-08-10 13:29:41 error: se cayo el servidor
+2024-08-10 13:29:48 error: se cayo el servidor
+2024-08-10 13:29:49 error: se cayo el servidor
+2024-08-10 13:29:51 error: se cayo el servidor
+2024-08-10 13:29:57 error: se cayo el servidor
+2024-08-10 13:30:10 error: se cayo el servidor
+2024-08-10 13:30:12 error: se cayo el servidor
+2024-08-10 13:30:15 error: se cayo el servidor
+2024-08-10 13:44:24 error: undefined
+2024-08-10 13:44:53 error: undefined
+2024-08-10 13:45:13 error: Product id 66434045700c9e3a6cdbe7b9 not found
+2024-08-10 13:46:21 error: Cast to ObjectId failed for value "66434045700c9e3a6cdbe7b89" (type string) at path "_id" for model "products"
+2024-08-10 13:50:22 error: Internal Server Error
+2024-08-10 13:51:25 error: Cast to ObjectId failed for value "66434045700c9e3a6cdbe7b89" (type string) at path "_id" for model "products"
+2024-08-10 14:00:33 error: Cast to ObjectId failed for value "66434045700c9e3a6cdbe7b89" (type string) at path "_id" for model "products"
+2024-08-15 09:05:22 error: Cast to ObjectId failed for value "66434045700c9e3a6cdbe7b89" (type string) at path "_id" for model "products"
+2024-08-15 13:53:35 error: logger is not defined
+2024-08-15 13:55:18 error: logger is not defined
+2024-08-15 13:55:19 error: logger is not defined
+2024-08-15 13:56:45 error: logger is not defined
+2024-08-15 13:57:13 error: logger is not defined
+2024-08-15 13:58:23 error: logger is not defined
+2024-08-15 14:00:15 error: logger is not defined
+2024-08-15 14:19:20 error: Authentication error:
+2024-08-15 14:22:45 error: Authentication error:
+2024-08-15 14:22:52 error: Authentication error:
+2024-08-15 14:27:43 error: Authentication error:
+2024-08-15 14:27:49 error: Authentication error:
+2024-08-16 09:00:36 error: Authentication error:
+2024-08-16 09:02:56 error: Authentication error:
+2024-08-16 09:04:55 error: Authentication error:
+2024-08-16 09:05:01 error: Authentication error:
+2024-08-16 09:05:01 error: Class constructor isUserCart cannot be invoked without 'new'
+2024-08-16 09:13:09 error: Authentication error:
+2024-08-16 09:13:15 error: Authentication error:
+2024-08-16 09:13:56 error: Authentication error:
+2024-08-16 09:14:50 error: Authentication error:
+2024-08-16 09:14:54 error: Authentication error:
+2024-08-16 09:15:23 error: Authentication error:
+2024-08-16 09:15:42 error: Authentication error:
+2024-08-16 09:23:56 error: Authentication error:
+2024-08-16 09:24:09 error: Authentication error:
+2024-08-16 09:24:10 error: Authentication error:
+2024-08-16 15:16:29 error: undefined
+2024-08-16 15:17:47 error: undefined
+2024-08-16 15:23:04 error: undefined
+2024-08-24 11:34:02 error: Bad Request
+2024-08-24 12:23:32 error: Cast to ObjectId failed for value "ojdddd" (type string) at path "_id" for model "products"
+2024-08-24 12:23:45 error: Cast to ObjectId failed for value "ojdddd" (type string) at path "_id" for model "products"
+2024-08-24 12:24:19 error: Cast to ObjectId failed for value "66433e9079ad1021ab6c7f" (type string) at path "_id" for model "products"
+2024-09-02 09:02:51 error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "products"
+2024-09-03 07:59:01 error: Error al agregar un nuevo producto: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 07:59:01 error: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 07:59:23 error: Error al agregar un nuevo producto: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 07:59:23 error: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 07:59:44 error: Error al agregar un nuevo producto: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 07:59:44 error: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 08:00:43 error: Error al agregar un nuevo producto: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 08:00:43 error: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 08:07:59 error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "products"
+2024-09-03 09:30:14 error: Error al agregar un nuevo producto: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 09:30:14 error: Cannot create property 'Symbol(level)' on string 'Agregando un nuevo producto...'
+2024-09-03 14:09:38 error: Error al agregar un nuevo producto: products validation failed: category: Path `category` is required.
+2024-09-03 14:09:38 error: products validation failed: category: Path `category` is required.
+2024-09-04 08:39:05 error: Cannot create property 'Symbol(level)' on string 'Actualizando producto con ID: 66d854e8cea596a5ea50af91'
+2024-09-15 09:18:01 error: Unexpected field
+2024-09-18 07:55:54 error: ENOENT: no such file or directory, open 'public/uploads/profiles/IMG_2598.png'
