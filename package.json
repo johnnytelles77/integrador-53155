@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "dev": "npx nodemon ./src/app.js",
     "test": "nodemon ./app.js",
