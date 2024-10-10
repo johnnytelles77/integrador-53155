@@ -16,7 +16,12 @@ class ProductService {
     }
 
     static async create(data) {
-        const product = await ProductRepository.create(data);
+        let productData = data;
+        if (user.role === "premium") {
+            productData = { ...data, owner: user.email };
+        }
+    
+        const product = await ProductRepository.create(productData);
         return product;
     }
 
@@ -25,7 +30,17 @@ class ProductService {
         return product;
     }
 
+
     static async deleteOne(id) {
+        const productData = await ProductRepository.getById(id);
+        if (user.role === "premium" && productData.owner !== user.email) {
+            throw error.unauthorizedError("User not authorized");
+        }
+
+        if(user.role === "admin" && productData.owner !== "admin") {
+            await Mails.sendMail(productData.owner, "Producto Eliminado", 'El producto ${productData.title} ha sido eliminado por el usuario administrador');
+        }
+
         const product = await ProductRepository.deleteOne(id);
         return product;
     }
