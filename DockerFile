@@ -1,20 +1,21 @@
-# Definimos una imagen base de node y su versión para nuestro contenedor
-FROM node:21.2.0
+# Imagen base
+FROM node:20-alpine
 
-# Definimos el directorio de trabajo dentro del contenedor 
+# Crear carpeta de trabajo
 WORKDIR /app
 
-# Copiamos el archivo package.json a la carpeta de trabajo
-COPY package.json .
+# Copiar package.json y package-lock.json
+COPY package*.json ./
 
-# Instalamos las dependencias del proyecto
+# Instalar todas las dependencias (prod + dev)
 RUN npm install
 
-# Copiamos el resto de los archivos a la carpeta de trabajo
+# Copiar el resto del proyecto
 COPY . .
 
-# Exponemos el puerto 8080
+# Exponer el puerto que tu API usa
 EXPOSE 8088
 
-# Definimos el comando para correr nuestra aplicación
-CMD [ "npm", "start" ]
+# Comando de inicio
+CMD ["npm", "start"]
+
