@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: coder_api
+    restart: always
+    ports:
+      - "8088:8088"               # expone tu API en localhost:8088
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/ecomerce  # apuntamos al contenedor mongo
+      - PORT=8088
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    container_name: coder_mongo
+    restart: always
+    ports:
+      - "27017:27017"            # expone Mongo localmente si quieres conectarte
+    volumes:
+      - mongo_data:/data/db      # persistencia de datos
+
+volumes:
+  mongo_data:
