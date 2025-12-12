@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "Dockerfile", "use": "@vercel/docker" }
+  ],
+  "env": {
+    "MONGO_URL": "@mongo_url",
+    "PORT": "8088"
+  }
+}
