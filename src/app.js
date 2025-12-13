@@ -31,11 +31,16 @@ app.use(cookieParser(envs.CODE_SECRET));
 app.use(session({
   store: MongoStore.create({
     mongoUrl: envs.MONGO_URL,
-    ttl: 15
+    ttl: 60 * 60,
   }),
   secret: envs.CODE_SECRET,
-  resave: true,
-  saveUninitialized: true,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    secure: false,
+    maxAge: 1000 * 60 * 60,
+  }
 }))
 app.use(passport.initialize())
 app.use(passport.session())
